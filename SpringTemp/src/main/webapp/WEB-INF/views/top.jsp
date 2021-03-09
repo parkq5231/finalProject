@@ -16,7 +16,8 @@
 			<li><a href="admin/admin">관리자 전용 페이지로</a></li>
 		</sec:authorize>
 		<sec:authorize access="isAuthenticated()">
-			<li><a href="logout">로그아웃</a></li>
+			<li><sec:authentication property="principal.username" />님
+			<a href="logout">로그아웃</a></li>
 		</sec:authorize>
 		<sec:authorize access="isAnonymous()">
 			<li><a href="loginForm">로그인</a></li>
