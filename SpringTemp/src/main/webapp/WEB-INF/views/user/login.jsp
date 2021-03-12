@@ -20,7 +20,7 @@ td {
 					var="SPRING_SECURITY_LAST_EXCEPTION" scope="session" />
 			</font>
 		</c:if>
-		
+
 		<form id="frm" name="frm" action="login" method="post">
 			<table id="tbl">
 				<tr>
@@ -37,5 +37,8 @@ td {
 			<button type="reset">취소</button>
 		</form>
 	</div>
+	<a
+		href="https://kauth.kakao.com/oauth/authorize?response_type=code&client_id=ddc2ddd84065b834985ac88d93f757e6&redirect_uri=	
+http://localhost/bank/callback">카카오로그인</a>
 </body>
 </html>
